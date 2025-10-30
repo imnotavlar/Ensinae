@@ -169,7 +169,7 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
-        imgLogoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logo (1).png"))); // NOI18N
+        imgLogoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
