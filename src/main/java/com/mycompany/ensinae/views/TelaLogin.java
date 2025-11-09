@@ -4,17 +4,27 @@
  */
 package com.mycompany.ensinae.views;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author aluno
  */
 public class TelaLogin extends javax.swing.JFrame {
 
+    Connection con = null;
+    ResultSet rs = null;
+    PreparedStatement pst = null;
     /**
      * Creates new form TelaPrincipal
      */
     public TelaLogin() {
         initComponents();
+        
+        con = db.mycon();
     }
 
     /**
@@ -226,7 +236,33 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtSenhaLoginActionPerformed
 
     private void btnEntrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarLoginActionPerformed
-        // TODO add your handling code here:
+        //Codigo do login aqui
+        
+        String Email = txtEmailLogin.getText();
+        String Password = txtSenhaLogin.getText();
+        
+        try{
+            
+            String sql = " SELECT * FROM user WHERE Email=? AND Password=?";
+            pst = con.prepareCall(sql);
+            
+            pst.setString(1, Email);
+            pst.setString(2, Password);
+            
+            rs = pst.executeQuery();
+            
+            if (rs.next()) {
+                JOptionPane.showMessageDialog(rootPane, "Entrando..");
+                
+                new TelaPrincipal().setVisible(true);
+                new TelaLogin().setVisible(false);
+            }else {
+                JOptionPane.showMessageDialog(rootPane, "Falha no Login");
+            }
+            
+        } catch (Exception e){
+        
+        }
     }//GEN-LAST:event_btnEntrarLoginActionPerformed
 
     /**
