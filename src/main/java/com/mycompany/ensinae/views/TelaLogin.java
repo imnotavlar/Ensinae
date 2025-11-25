@@ -24,6 +24,8 @@ public class TelaLogin extends javax.swing.JFrame {
     public TelaLogin() {
         initComponents();
         
+
+        
         con = db.mycon();
     }
 
@@ -134,6 +136,11 @@ public class TelaLogin extends javax.swing.JFrame {
         btnCadastroLogin.setForeground(new java.awt.Color(0, 51, 255));
         btnCadastroLogin.setText("Cadastre-se");
         btnCadastroLogin.setBorder(null);
+        btnCadastroLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastroLoginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout imgFundoLoginLayout = new javax.swing.GroupLayout(imgFundoLogin);
         imgFundoLogin.setLayout(imgFundoLoginLayout);
@@ -225,6 +232,7 @@ public class TelaLogin extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEmailLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailLoginActionPerformed
@@ -255,7 +263,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Entrando..");
                 
                 new TelaPrincipal().setVisible(true);
-                new TelaLogin().setVisible(false);
+                this.setVisible(false);
             }else {
                 JOptionPane.showMessageDialog(rootPane, "Falha no Login");
             }
@@ -264,6 +272,13 @@ public class TelaLogin extends javax.swing.JFrame {
         
         }
     }//GEN-LAST:event_btnEntrarLoginActionPerformed
+
+    private void btnCadastroLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroLoginActionPerformed
+        // TODO add your handling code here:
+        new TelaCadastro().setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_btnCadastroLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -299,6 +314,7 @@ public class TelaLogin extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TelaLogin().setVisible(true);
+                
             }
         });
     }

@@ -4,6 +4,11 @@
  */
 package com.mycompany.ensinae.views;
 
+import java.sql.Statement;
+import javax.swing.JOptionPane;
+
+
+
 /**
  *
  * @author aluno
@@ -191,8 +196,8 @@ public class TelaCadastro extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addComponent(imgLogoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(imgFundoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addComponent(imgFundoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pnlAzulLogin.setBackground(new java.awt.Color(0, 51, 255));
@@ -243,6 +248,7 @@ public class TelaCadastro extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEmailCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailCadastroActionPerformed
@@ -255,10 +261,36 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btnCriarCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCriarCadastroActionPerformed
         // TODO add your handling code here:
+        String nam = txtNomeCadastro.getText();
+        String Email = txtEmailCadastro.getText();
+        String senha = txtSenhaCadastro.getText();
+        
+        try{
+            
+            Statement s = db.mycon().createStatement();
+            
+            s.executeUpdate(" INSERT INTO user (Name, Email, Password) "
+                    + "VALUES ('"+nam+"', '"+Email+"', '"+senha+"')  ");
+            
+            JOptionPane.showMessageDialog(rootPane, "Sua conta foi criada, prossiga para o Login");
+            
+            this.setVisible(false);
+            new TelaLogin().setVisible(true);
+            
+        } catch (Exception e){
+            System.out.println(e);
+        }
+        txtNomeCadastro.getText();
+        txtEmailCadastro.getText();
+        txtSenhaCadastro.getText();
+        
+        
     }//GEN-LAST:event_btnCriarCadastroActionPerformed
 
     private void btnEntrarCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarCadastroActionPerformed
         // TODO add your handling code here:
+        new TelaLogin().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEntrarCadastroActionPerformed
 
     private void txtNomeCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeCadastroActionPerformed
