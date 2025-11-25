@@ -81,7 +81,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         jButton1.setText("Quero estudar!");
         jPanel1.add(jButton1);
-        jButton1.setBounds(90, 220, 200, 30);
+        jButton1.setBounds(90, 230, 200, 30);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -197,6 +197,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void btnEntrarPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarPrincipalActionPerformed
         // TODO add your handling code here:
+        new TelaLogin().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEntrarPrincipalActionPerformed
 
     private void btnVestibularesPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVestibularesPrincipalActionPerformed

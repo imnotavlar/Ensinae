@@ -5,6 +5,9 @@
 package com.mycompany.ensinae.views;
 
 import java.util.logging.Logger;
+import java.awt.Desktop;
+import java.net.URI;
+
 
 
 /**
@@ -33,22 +36,22 @@ public class Vestibulares extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel10 = new javax.swing.JLabel();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel8 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        btnEntrarSN = new javax.swing.JButton();
-        btnSobreSN = new javax.swing.JButton();
-        btnVestibularesSN = new javax.swing.JButton();
-        btnExtraSN = new javax.swing.JButton();
-        btnDisciplinasSN = new javax.swing.JButton();
+        btnEntrarVest = new javax.swing.JButton();
+        btnSobreVest = new javax.swing.JButton();
+        btnInicioVest = new javax.swing.JButton();
+        btnExtraVest = new javax.swing.JButton();
+        btnDisciplinasVest = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         Fatec = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
@@ -58,7 +61,6 @@ public class Vestibulares extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -69,9 +71,7 @@ public class Vestibulares extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
@@ -80,9 +80,7 @@ public class Vestibulares extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -91,9 +89,7 @@ public class Vestibulares extends javax.swing.JFrame {
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
@@ -102,9 +98,7 @@ public class Vestibulares extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
@@ -112,49 +106,63 @@ public class Vestibulares extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
 
+        jLabel10.setText("jLabel10");
+
+        jInternalFrame1.setVisible(true);
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logo.png"))); // NOI18N
 
-        btnEntrarSN.setBackground(new java.awt.Color(0, 51, 255));
-        btnEntrarSN.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
-        btnEntrarSN.setForeground(new java.awt.Color(255, 255, 255));
-        btnEntrarSN.setText("Sair");
-        btnEntrarSN.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrarVest.setBackground(new java.awt.Color(0, 51, 255));
+        btnEntrarVest.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
+        btnEntrarVest.setForeground(new java.awt.Color(255, 255, 255));
+        btnEntrarVest.setText("Sair");
+        btnEntrarVest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEntrarSNActionPerformed(evt);
+                btnEntrarVestActionPerformed(evt);
             }
         });
 
-        btnSobreSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnSobreSN.setText("Sobre Nós");
-        btnSobreSN.addActionListener(new java.awt.event.ActionListener() {
+        btnSobreVest.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnSobreVest.setText("Sobre Nós");
+        btnSobreVest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSobreSNActionPerformed(evt);
+                btnSobreVestActionPerformed(evt);
             }
         });
 
-        btnVestibularesSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnVestibularesSN.setText("Tela Principal");
-        btnVestibularesSN.addActionListener(new java.awt.event.ActionListener() {
+        btnInicioVest.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnInicioVest.setText("Início");
+        btnInicioVest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVestibularesSNActionPerformed(evt);
+                btnInicioVestActionPerformed(evt);
             }
         });
 
-        btnExtraSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnExtraSN.setText("Extra");
-        btnExtraSN.addActionListener(new java.awt.event.ActionListener() {
+        btnExtraVest.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnExtraVest.setText("Extra");
+        btnExtraVest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExtraSNActionPerformed(evt);
+                btnExtraVestActionPerformed(evt);
             }
         });
 
-        btnDisciplinasSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnDisciplinasSN.setText("Disciplinas");
+        btnDisciplinasVest.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        btnDisciplinasVest.setText("Disciplinas");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -163,16 +171,16 @@ public class Vestibulares extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addComponent(btnDisciplinasSN)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnInicioVest)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnExtraSN)
+                .addComponent(btnDisciplinasVest)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnVestibularesSN)
+                .addComponent(btnExtraVest)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSobreSN)
+                .addComponent(btnSobreVest)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnEntrarSN)
+                .addComponent(btnEntrarVest)
                 .addGap(14, 14, 14))
         );
         jPanel8Layout.setVerticalGroup(
@@ -184,16 +192,13 @@ public class Vestibulares extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDisciplinasSN)
-                    .addComponent(btnExtraSN)
-                    .addComponent(btnVestibularesSN)
-                    .addComponent(btnSobreSN)
-                    .addComponent(btnEntrarSN))
+                    .addComponent(btnDisciplinasVest)
+                    .addComponent(btnExtraVest)
+                    .addComponent(btnInicioVest)
+                    .addComponent(btnSobreVest)
+                    .addComponent(btnEntrarVest))
                 .addGap(18, 18, 18))
         );
-
-        getContentPane().add(jPanel8);
-        jPanel8.setBounds(0, 0, 700, 60);
 
         jTabbedPane1.setBackground(new java.awt.Color(250, 249, 246));
         jTabbedPane1.setForeground(new java.awt.Color(0, 51, 255));
@@ -228,13 +233,9 @@ public class Vestibulares extends javax.swing.JFrame {
         Fatec.add(jLabel9);
         jLabel9.setBounds(170, 190, 130, 20);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        Fatec.add(jLabel16);
-        jLabel16.setBounds(959, 20, 0, 100);
-
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 51, 255));
-        jButton2.setText("VER EDITAL");
+        jButton2.setText("ACESSAR O SITE");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -242,8 +243,6 @@ public class Vestibulares extends javax.swing.JFrame {
         });
         Fatec.add(jButton2);
         jButton2.setBounds(140, 240, 293, 32);
-        Fatec.add(jLabel18);
-        jLabel18.setBounds(390, 166, 0, 0);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         Fatec.add(jLabel19);
@@ -259,7 +258,7 @@ public class Vestibulares extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Fatec", Fatec);
 
-        unesppp.setBackground(new java.awt.Color(0, 0, 255));
+        unesppp.setBackground(new java.awt.Color(0, 51, 255));
         unesppp.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
@@ -287,13 +286,9 @@ public class Vestibulares extends javax.swing.JFrame {
         unesppp.add(jLabel6);
         jLabel6.setBounds(170, 190, 130, 20);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        unesppp.add(jLabel11);
-        jLabel11.setBounds(959, 20, 0, 100);
-
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 51, 255));
-        jButton1.setText("VER EDITAL");
+        jButton1.setText("ACESSAR O SITE");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -322,7 +317,7 @@ public class Vestibulares extends javax.swing.JFrame {
         unesp.setLayout(unespLayout);
         unespLayout.setHorizontalGroup(
             unespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(unesppp, javax.swing.GroupLayout.DEFAULT_SIZE, 618, Short.MAX_VALUE)
+            .addComponent(unesppp, javax.swing.GroupLayout.DEFAULT_SIZE, 617, Short.MAX_VALUE)
         );
         unespLayout.setVerticalGroup(
             unespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -361,13 +356,9 @@ public class Vestibulares extends javax.swing.JFrame {
         Enem.add(jLabel24);
         jLabel24.setBounds(170, 190, 130, 20);
 
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        Enem.add(jLabel25);
-        jLabel25.setBounds(959, 20, 0, 100);
-
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 51, 255));
-        jButton3.setText("VER EDITAL");
+        jButton3.setText("ACESSAR O SITE");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -375,8 +366,6 @@ public class Vestibulares extends javax.swing.JFrame {
         });
         Enem.add(jButton3);
         jButton3.setBounds(140, 240, 293, 32);
-        Enem.add(jLabel27);
-        jLabel27.setBounds(390, 166, 0, 0);
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         Enem.add(jLabel28);
@@ -420,13 +409,9 @@ public class Vestibulares extends javax.swing.JFrame {
         Fuvest.add(jLabel33);
         jLabel33.setBounds(170, 190, 130, 20);
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        Fuvest.add(jLabel34);
-        jLabel34.setBounds(959, 20, 0, 100);
-
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton4.setForeground(new java.awt.Color(0, 51, 255));
-        jButton4.setText("VER EDITAL");
+        jButton4.setText("ACESSAR O SITE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -434,8 +419,6 @@ public class Vestibulares extends javax.swing.JFrame {
         });
         Fuvest.add(jButton4);
         jButton4.setBounds(140, 240, 293, 32);
-        Fuvest.add(jLabel36);
-        jLabel36.setBounds(390, 166, 0, 0);
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         Fuvest.add(jLabel37);
@@ -479,13 +462,9 @@ public class Vestibulares extends javax.swing.JFrame {
         UFSC.add(jLabel42);
         jLabel42.setBounds(170, 190, 130, 20);
 
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        UFSC.add(jLabel43);
-        jLabel43.setBounds(959, 20, 0, 100);
-
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(0, 51, 255));
-        jButton5.setText("VER EDITAL");
+        jButton5.setText("ACESSAR O SITE");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -493,8 +472,6 @@ public class Vestibulares extends javax.swing.JFrame {
         });
         UFSC.add(jButton5);
         jButton5.setBounds(140, 240, 293, 32);
-        UFSC.add(jLabel45);
-        jLabel45.setBounds(390, 166, 0, 0);
 
         jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         UFSC.add(jLabel46);
@@ -538,13 +515,9 @@ public class Vestibulares extends javax.swing.JFrame {
         UERJ.add(jLabel51);
         jLabel51.setBounds(170, 190, 130, 20);
 
-        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/unespp.png"))); // NOI18N
-        UERJ.add(jLabel52);
-        jLabel52.setBounds(959, 20, 0, 100);
-
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton6.setForeground(new java.awt.Color(0, 51, 255));
-        jButton6.setText("VER EDITAL");
+        jButton6.setText("ACESSAR O SITE");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -552,8 +525,6 @@ public class Vestibulares extends javax.swing.JFrame {
         });
         UERJ.add(jButton6);
         jButton6.setBounds(140, 240, 293, 32);
-        UERJ.add(jLabel54);
-        jLabel54.setBounds(390, 166, 0, 0);
 
         jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         UERJ.add(jLabel55);
@@ -569,41 +540,50 @@ public class Vestibulares extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("UERJ", UERJ);
 
-        getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(0, 66, 700, 330);
-        jTabbedPane1.getAccessibleContext().setAccessibleName("UNESP");
-
         jMenuBar1.add(jMenu2);
         jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTabbedPane1)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jTabbedPane1.getAccessibleContext().setAccessibleName("UNESP");
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnEntrarVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarVestActionPerformed
         // TODO add your handling code here:
-        try {
-            // URL que você quer abrir
-            java.awt.Desktop.getDesktop().browse(new java.net.URI("https://cdn.medblog.estrategiaeducacional.com.br/wp-content/uploads/2025/09/unesp_editalAD_2026.pdf"));
-        } catch (Exception e) {
-            e.printStackTrace();
-            javax.swing.JOptionPane.showMessageDialog(this, "Não foi possível abrir o site.");
-        }
-    }//GEN-LAST:event_jButton1ActionPerformed
+        new TelaLogin().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnEntrarVestActionPerformed
 
-    private void btnEntrarSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarSNActionPerformed
+    private void btnSobreVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreVestActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnEntrarSNActionPerformed
+        new TelaSobreNos().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnSobreVestActionPerformed
 
-    private void btnSobreSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreSNActionPerformed
+    private void btnExtraVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtraVestActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSobreSNActionPerformed
-
-    private void btnExtraSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtraSNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnExtraSNActionPerformed
+    }//GEN-LAST:event_btnExtraVestActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -625,11 +605,20 @@ public class Vestibulares extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void btnVestibularesSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVestibularesSNActionPerformed
+    private void btnInicioVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioVestActionPerformed
         // TODO add your handling code here:
         new TelaPrincipal().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnVestibularesSNActionPerformed
+    }//GEN-LAST:event_btnInicioVestActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try {
+            Desktop.getDesktop().browse(new URI("https://vestibular.unesp.br/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -662,26 +651,25 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JPanel Fuvest;
     private javax.swing.JPanel UERJ;
     private javax.swing.JPanel UFSC;
-    private javax.swing.JButton btnDisciplinasSN;
-    private javax.swing.JButton btnEntrarSN;
-    private javax.swing.JButton btnExtraSN;
-    private javax.swing.JButton btnSobreSN;
-    private javax.swing.JButton btnVestibularesSN;
+    private javax.swing.JButton btnDisciplinasVest;
+    private javax.swing.JButton btnEntrarVest;
+    private javax.swing.JButton btnExtraVest;
+    private javax.swing.JButton btnInicioVest;
+    private javax.swing.JButton btnSobreVest;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -689,9 +677,7 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -699,9 +685,7 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
@@ -709,9 +693,7 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
@@ -719,8 +701,6 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
