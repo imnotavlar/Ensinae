@@ -297,9 +297,9 @@ public class Vestibulares extends javax.swing.JFrame {
         unesppp.add(jButton1);
         jButton1.setBounds(140, 240, 293, 32);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/unespp.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/6cad392f-727a-4be7-a414-c635fe6e75aa.png"))); // NOI18N
         unesppp.add(jLabel8);
-        jLabel8.setBounds(150, 40, 320, 80);
+        jLabel8.setBounds(150, 20, 320, 120);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
         unesppp.add(jLabel13);
@@ -549,11 +549,8 @@ public class Vestibulares extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTabbedPane1)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -582,7 +579,8 @@ public class Vestibulares extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSobreVestActionPerformed
 
     private void btnExtraVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtraVestActionPerformed
-        // TODO add your handling code here:
+    new TelaMaterialExtra().setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnExtraVestActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

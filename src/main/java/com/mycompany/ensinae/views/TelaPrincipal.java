@@ -193,6 +193,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void btnExtraPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtraPrincipalActionPerformed
         // TODO add your handling code here:
+        new TelaMaterialExtra().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnExtraPrincipalActionPerformed
 
     private void btnEntrarPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarPrincipalActionPerformed

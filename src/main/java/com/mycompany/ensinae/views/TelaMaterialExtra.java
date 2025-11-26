@@ -4,16 +4,19 @@
  */
 package com.mycompany.ensinae.views;
 
+import java.awt.Desktop;
+import java.net.URI;
+
 /**
  *
  * @author aluno
  */
-public class TelaSobreNos extends javax.swing.JFrame {
+public class TelaMaterialExtra extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaPrincipal
      */
-    public TelaSobreNos() {
+    public TelaMaterialExtra() {
         initComponents();
     }
 
@@ -28,18 +31,12 @@ public class TelaSobreNos extends javax.swing.JFrame {
 
         jLabel13 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        btnAcessarMatExtra = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnSairSN = new javax.swing.JButton();
@@ -53,74 +50,72 @@ public class TelaSobreNos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 255));
-        jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/e-book.png"))); // NOI18N
-        jLabel2.setText("Valores");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(310, 210, 190, 16);
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("conteúdos que facilitem a compreensão e o desenvolvimento pessoal e acadêmico.");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 90, 510, 20);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Acessibilidade, inovação, comprometimento, colaboração e respeito.");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(150, 230, 420, 20);
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/alvo.png"))); // NOI18N
-        jLabel5.setText("Missão");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(310, 50, 110, 16);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Tornar o aprendizado acessível, dinâmico e motivador para todos os estudantes, oferecendo ");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(80, 70, 570, 20);
+        jLabel6.setText("Tenha acesso a um acervo completo de materiais exclusivos,");
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Desenvolver uma plataforma que sirva como apoio ao estudo e ao compartilhamento");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(90, 150, 610, 20);
+        btnAcessarMatExtra.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAcessarMatExtra.setForeground(new java.awt.Color(0, 51, 255));
+        btnAcessarMatExtra.setText("Acesse o Material Extra!");
+        btnAcessarMatExtra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcessarMatExtraActionPerformed(evt);
+            }
+        });
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/male-teenager-portrait-isolated (3).png"))); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/olho.png"))); // NOI18N
-        jLabel8.setText("Visão");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(310, 130, 120, 16);
+        jLabel8.setText("desempenho ainda melhor nos principais vestibulares do país.");
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("de conhecimento e que auxilie os estudantes que desejam prestar os vestibulares");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 170, 500, 20);
+        jLabel9.setText("vão fortalecer sua preparação e ajudar você a alcançar um");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(-70, -10, 140, 160);
+        jLabel10.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("incluindo provas antigas, listas de exercícios e simulados que");
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(670, 70, 30, 300);
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel12);
-        jLabel12.setBounds(-90, -10, 260, 300);
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel14);
-        jLabel14.setBounds(630, 140, 260, 300);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnAcessarMatExtra, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(79, 79, 79)))
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(22, 22, 22))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addGap(18, 18, 18)
+                .addComponent(btnAcessarMatExtra)
+                .addGap(106, 106, 106))
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -145,7 +140,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
         });
 
         btnVestibularesSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnVestibularesSN.setText("Vestibulares");
+        btnVestibularesSN.setText("Sobre nós");
         btnVestibularesSN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVestibularesSNActionPerformed(evt);
@@ -153,7 +148,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
         });
 
         btnExtraSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        btnExtraSN.setText("Extra");
+        btnExtraSN.setText("Vestibulares");
         btnExtraSN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExtraSNActionPerformed(evt);
@@ -170,7 +165,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addComponent(btnInicioSN)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnDisciplinasSN)
@@ -203,15 +198,15 @@ public class TelaSobreNos extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -226,7 +221,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
 
     private void btnExtraSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExtraSNActionPerformed
         // TODO add your handling code here:
-        new TelaMaterialExtra().setVisible(true);
+        new Vestibulares().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnExtraSNActionPerformed
 
@@ -238,9 +233,18 @@ public class TelaSobreNos extends javax.swing.JFrame {
 
     private void btnVestibularesSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVestibularesSNActionPerformed
         // TODO add your handling code here:
-        new Vestibulares().setVisible(true);
+        new TelaSobreNos().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVestibularesSNActionPerformed
+
+    private void btnAcessarMatExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarMatExtraActionPerformed
+        // TODO add your handling code here:
+        try {
+            Desktop.getDesktop().browse(new URI("https://drive.google.com/drive/folders/1Wfegj7GSAUn-Ne99EGWVITCSD7eds3Hl?usp=sharing"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnAcessarMatExtraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,6 +282,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAcessarMatExtra;
     private javax.swing.JButton btnDisciplinasSN;
     private javax.swing.JButton btnExtraSN;
     private javax.swing.JButton btnInicioSN;
@@ -285,16 +290,9 @@ public class TelaSobreNos extends javax.swing.JFrame {
     private javax.swing.JButton btnVestibularesSN;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
