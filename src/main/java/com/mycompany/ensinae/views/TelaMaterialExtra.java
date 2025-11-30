@@ -157,6 +157,11 @@ public class TelaMaterialExtra extends javax.swing.JFrame {
 
         btnDisciplinasSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
         btnDisciplinasSN.setText("Disciplinas");
+        btnDisciplinasSN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDisciplinasSNActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -198,7 +203,7 @@ public class TelaMaterialExtra extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -245,6 +250,12 @@ public class TelaMaterialExtra extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_btnAcessarMatExtraActionPerformed
+
+    private void btnDisciplinasSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisciplinasSNActionPerformed
+        // TODO add your handling code here:
+        new TelaDisciplinas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnDisciplinasSNActionPerformed
 
     /**
      * @param args the command line arguments

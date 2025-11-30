@@ -162,6 +162,11 @@ public class TelaSobreNos extends javax.swing.JFrame {
 
         btnDisciplinasSN.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
         btnDisciplinasSN.setText("Disciplinas");
+        btnDisciplinasSN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDisciplinasSNActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -241,6 +246,12 @@ public class TelaSobreNos extends javax.swing.JFrame {
         new Vestibulares().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVestibularesSNActionPerformed
+
+    private void btnDisciplinasSNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisciplinasSNActionPerformed
+        // TODO add your handling code here:
+        new TelaDisciplinas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnDisciplinasSNActionPerformed
 
     /**
      * @param args the command line arguments

@@ -163,6 +163,11 @@ public class Vestibulares extends javax.swing.JFrame {
 
         btnDisciplinasVest.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
         btnDisciplinasVest.setText("Disciplinas");
+        btnDisciplinasVest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDisciplinasVestActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -221,15 +226,15 @@ public class Vestibulares extends javax.swing.JFrame {
         Fatec.add(jLabel5);
         jLabel5.setBounds(170, 130, 130, 20);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("PRIMEIRA FASE:");
+        jLabel7.setText("PROVA:");
         Fatec.add(jLabel7);
         jLabel7.setBounds(170, 160, 198, 20);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("SEGUNDA FASE:");
+        jLabel9.setText("RESULTADOS:");
         Fatec.add(jLabel9);
         jLabel9.setBounds(170, 190, 130, 20);
 
@@ -274,7 +279,7 @@ public class Vestibulares extends javax.swing.JFrame {
         unesppp.add(jLabel2);
         jLabel2.setBounds(170, 130, 130, 20);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PRIMEIRA FASE:");
         unesppp.add(jLabel4);
@@ -344,15 +349,15 @@ public class Vestibulares extends javax.swing.JFrame {
         Enem.add(jLabel22);
         jLabel22.setBounds(170, 130, 130, 20);
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("PRIMEIRA FASE:");
+        jLabel23.setText("PRIMEIRO DIA:");
         Enem.add(jLabel23);
         jLabel23.setBounds(170, 160, 198, 20);
 
         jLabel24.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("SEGUNDA FASE:");
+        jLabel24.setText("SEGUNDO DIA:");
         Enem.add(jLabel24);
         jLabel24.setBounds(170, 190, 130, 20);
 
@@ -617,6 +622,12 @@ public class Vestibulares extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnDisciplinasVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisciplinasVestActionPerformed
+        // TODO add your handling code here:
+        new TelaDisciplinas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnDisciplinasVestActionPerformed
 
     /**
      * @param args the command line arguments

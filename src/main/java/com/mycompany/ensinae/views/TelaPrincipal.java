@@ -80,6 +80,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         jButton1.setText("Quero estudar!");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(90, 230, 200, 30);
 
@@ -129,6 +134,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnDisciplinasPrincipal.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
         btnDisciplinasPrincipal.setText("Disciplinas");
+        btnDisciplinasPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDisciplinasPrincipalActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -208,6 +218,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         new Vestibulares().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVestibularesPrincipalActionPerformed
+
+    private void btnDisciplinasPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisciplinasPrincipalActionPerformed
+        // TODO add your handling code here:
+        new TelaDisciplinas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnDisciplinasPrincipalActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new TelaDisciplinas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

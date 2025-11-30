@@ -135,6 +135,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Quero estudar!"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="90" y="230" width="200" height="30"/>
@@ -272,6 +275,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Disciplinas"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDisciplinasPrincipalActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
