@@ -166,7 +166,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="exemplo@gmail.com"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailCadastroActionPerformed"/>
@@ -199,7 +198,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Senha123"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSenhaCadastroActionPerformed"/>
@@ -265,7 +263,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Seu Nome"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNomeCadastroActionPerformed"/>

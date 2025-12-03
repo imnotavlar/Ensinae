@@ -36,8 +36,6 @@ public class TelaDisciplinas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel10 = new javax.swing.JLabel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel8 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         btnEntrarVest = new javax.swing.JButton();
@@ -46,28 +44,21 @@ public class TelaDisciplinas extends javax.swing.JFrame {
         btnVestibularesDisc = new javax.swing.JButton();
         btnExtraDisc = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        Matematica1 = new javax.swing.JPanel();
+        portgues = new javax.swing.JPanel();
+        btnAcessarPort = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         Matematica = new javax.swing.JPanel();
+        btnAcessarMatExtra1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         fisica = new javax.swing.JPanel();
+        btnAcessarfisic = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         biologia = new javax.swing.JPanel();
+        btnAcessarBio = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
-
-        jLabel10.setText("jLabel10");
-
-        jInternalFrame1.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -158,20 +149,88 @@ public class TelaDisciplinas extends javax.swing.JFrame {
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
 
-        Matematica1.setBackground(new java.awt.Color(0, 51, 255));
-        Matematica1.setLayout(null);
-        jTabbedPane1.addTab("Português", Matematica1);
+        portgues.setBackground(new java.awt.Color(0, 51, 255));
+        portgues.setLayout(null);
+
+        btnAcessarPort.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAcessarPort.setForeground(new java.awt.Color(0, 51, 255));
+        btnAcessarPort.setText("Acesse as Aulas!");
+        btnAcessarPort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcessarPortActionPerformed(evt);
+            }
+        });
+        portgues.add(btnAcessarPort);
+        btnAcessarPort.setBounds(60, 190, 235, 32);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/noslen.png"))); // NOI18N
+        jLabel5.setText("jLabel1");
+        portgues.add(jLabel5);
+        jLabel5.setBounds(-120, -70, 700, 410);
+
+        jTabbedPane1.addTab("Português", portgues);
 
         Matematica.setBackground(new java.awt.Color(0, 51, 255));
         Matematica.setLayout(null);
+
+        btnAcessarMatExtra1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAcessarMatExtra1.setForeground(new java.awt.Color(0, 51, 255));
+        btnAcessarMatExtra1.setText("Acesse as Aulas!");
+        btnAcessarMatExtra1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcessarMatExtra1ActionPerformed(evt);
+            }
+        });
+        Matematica.add(btnAcessarMatExtra1);
+        btnAcessarMatExtra1.setBounds(60, 190, 235, 32);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/rafael.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        Matematica.add(jLabel1);
+        jLabel1.setBounds(-120, -70, 700, 410);
+
         jTabbedPane1.addTab("Matemática", Matematica);
 
         fisica.setBackground(new java.awt.Color(0, 51, 255));
         fisica.setLayout(null);
+
+        btnAcessarfisic.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAcessarfisic.setForeground(new java.awt.Color(0, 51, 255));
+        btnAcessarfisic.setText("Acesse as Aulas!");
+        btnAcessarfisic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcessarfisicActionPerformed(evt);
+            }
+        });
+        fisica.add(btnAcessarfisic);
+        btnAcessarfisic.setBounds(60, 190, 235, 32);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/coelho.png"))); // NOI18N
+        jLabel3.setText("jLabel1");
+        fisica.add(jLabel3);
+        jLabel3.setBounds(-120, -70, 700, 410);
+
         jTabbedPane1.addTab("Fisíca", fisica);
 
         biologia.setBackground(new java.awt.Color(0, 51, 255));
         biologia.setLayout(null);
+
+        btnAcessarBio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAcessarBio.setForeground(new java.awt.Color(0, 51, 255));
+        btnAcessarBio.setText("Acesse as Aulas!");
+        btnAcessarBio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcessarBioActionPerformed(evt);
+            }
+        });
+        biologia.add(btnAcessarBio);
+        btnAcessarBio.setBounds(60, 170, 235, 32);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/landim.png"))); // NOI18N
+        jLabel4.setText("jLabel1");
+        biologia.add(jLabel4);
+        jLabel4.setBounds(-120, -70, 700, 410);
+
         jTabbedPane1.addTab("Biologia", biologia);
 
         jMenuBar1.add(jMenu2);
@@ -229,6 +288,30 @@ public class TelaDisciplinas extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnExtraDiscActionPerformed
 
+    private void btnAcessarPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarPortActionPerformed
+        // TODO add your handling code here:
+        new TelaPortugues().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnAcessarPortActionPerformed
+
+    private void btnAcessarMatExtra1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarMatExtra1ActionPerformed
+        // TODO add your handling code here:
+        new TelaMatematica().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnAcessarMatExtra1ActionPerformed
+
+    private void btnAcessarfisicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarfisicActionPerformed
+        // TODO add your handling code here:
+        new TelaFisica().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnAcessarfisicActionPerformed
+
+    private void btnAcessarBioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarBioActionPerformed
+        // TODO add your handling code here:
+        new TelaBiologia().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnAcessarBioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -256,21 +339,27 @@ public class TelaDisciplinas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Matematica;
-    private javax.swing.JPanel Matematica1;
     private javax.swing.JPanel biologia;
+    private javax.swing.JButton btnAcessarBio;
+    private javax.swing.JButton btnAcessarMatExtra1;
+    private javax.swing.JButton btnAcessarPort;
+    private javax.swing.JButton btnAcessarfisic;
     private javax.swing.JButton btnEntrarVest;
     private javax.swing.JButton btnExtraDisc;
     private javax.swing.JButton btnInicioVest;
     private javax.swing.JButton btnSobreVest;
     private javax.swing.JButton btnVestibularesDisc;
     private javax.swing.JPanel fisica;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPanel portgues;
     // End of variables declaration//GEN-END:variables
 }

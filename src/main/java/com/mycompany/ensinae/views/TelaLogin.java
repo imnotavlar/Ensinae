@@ -94,7 +94,6 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel1.setText("Faça seu Login");
 
         txtEmailLogin.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        txtEmailLogin.setText("exemplo@gmail.com");
         txtEmailLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmailLoginActionPerformed(evt);
@@ -110,7 +109,6 @@ public class TelaLogin extends javax.swing.JFrame {
         lblSenhaLogin.setText("Senha:");
 
         txtSenhaLogin.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        txtSenhaLogin.setText("Senha123");
         txtSenhaLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSenhaLoginActionPerformed(evt);

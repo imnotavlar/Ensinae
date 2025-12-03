@@ -59,7 +59,6 @@ public class TelaCadastro extends javax.swing.JFrame {
         jLabel1.setText("Crie sua Conta");
 
         txtEmailCadastro.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        txtEmailCadastro.setText("exemplo@gmail.com");
         txtEmailCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmailCadastroActionPerformed(evt);
@@ -75,7 +74,6 @@ public class TelaCadastro extends javax.swing.JFrame {
         lblSenhaCadastro.setText("Senha:");
 
         txtSenhaCadastro.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        txtSenhaCadastro.setText("Senha123");
         txtSenhaCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSenhaCadastroActionPerformed(evt);
@@ -108,7 +106,6 @@ public class TelaCadastro extends javax.swing.JFrame {
         });
 
         txtNomeCadastro.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        txtNomeCadastro.setText("Seu Nome");
         txtNomeCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomeCadastroActionPerformed(evt);
