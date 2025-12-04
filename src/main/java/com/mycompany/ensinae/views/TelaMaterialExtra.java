@@ -6,6 +6,7 @@ package com.mycompany.ensinae.views;
 
 import java.awt.Desktop;
 import java.net.URI;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -18,6 +19,8 @@ public class TelaMaterialExtra extends javax.swing.JFrame {
      */
     public TelaMaterialExtra() {
         initComponents();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
+        setIconImage(icon.getImage());
     }
 
     /**

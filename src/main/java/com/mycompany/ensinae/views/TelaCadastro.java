@@ -5,6 +5,7 @@
 package com.mycompany.ensinae.views;
 
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 
@@ -20,6 +21,8 @@ public class TelaCadastro extends javax.swing.JFrame {
      */
     public TelaCadastro() {
         initComponents();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
+        setIconImage(icon.getImage());
     }
 
     /**

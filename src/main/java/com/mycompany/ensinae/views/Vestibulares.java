@@ -7,6 +7,7 @@ package com.mycompany.ensinae.views;
 import java.util.logging.Logger;
 import java.awt.Desktop;
 import java.net.URI;
+import javax.swing.ImageIcon;
 
 
 
@@ -24,6 +25,8 @@ public class Vestibulares extends javax.swing.JFrame {
      */
     public Vestibulares() {
         initComponents();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
+        setIconImage(icon.getImage());
     }
 
     /**

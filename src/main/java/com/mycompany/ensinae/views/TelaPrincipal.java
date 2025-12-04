@@ -4,6 +4,8 @@
  */
 package com.mycompany.ensinae.views;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author aluno
@@ -15,6 +17,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        
+        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
+        setIconImage(icon.getImage());
+
         
         
     }
