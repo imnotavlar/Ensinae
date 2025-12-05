@@ -10,6 +10,8 @@ import java.sql.ResultSet;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
+
+
 /**
  *
  * @author aluno
@@ -263,6 +265,8 @@ public class TelaLogin extends javax.swing.JFrame {
             if (rs.next()) {
                 JOptionPane.showMessageDialog(rootPane, "Entrando..");
                 
+                Sessao.emailUsuario = Email;
+                
                 new TelaPrincipal().setVisible(true);
                 this.setVisible(false);
             }else {
@@ -319,6 +323,9 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
     }
+    
+   
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastroLogin;

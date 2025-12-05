@@ -35,13 +35,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnEntrarPrincipal = new javax.swing.JButton();
@@ -55,50 +50,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 51, 255));
         jPanel1.setLayout(null);
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/mulhertp.png"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(240, -4, 460, 340);
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("O Ensinaê é uma plataforma criada para ajudar você ");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(30, 80, 370, 20);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("a aprender de forma prática, rápida e eficiente!");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(30, 100, 300, 20);
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Com o Ensinaê, você encontra conteúdo de qualidade ");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(30, 130, 350, 16);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("para se preparar para o vestibular e muito mais!");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(30, 150, 320, 20);
-
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        jButton1.setText("Quero estudar!");
+        jButton1.setForeground(new java.awt.Color(0, 51, 255));
+        jButton1.setText("Clique para conhecer nossos professores!");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(90, 230, 200, 30);
+        jButton1.setBounds(40, 230, 410, 30);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Está esperando o que para começar a mudar seu futuro?");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(30, 190, 360, 20);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/telaprincipal.png"))); // NOI18N
+        jLabel5.setText("jLabel1");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(0, -60, 730, 400);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -280,12 +246,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnVestibularesPrincipal;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

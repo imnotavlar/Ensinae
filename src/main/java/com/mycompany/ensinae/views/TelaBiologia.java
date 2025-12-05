@@ -7,6 +7,8 @@ package com.mycompany.ensinae.views;
 
 import java.awt.Desktop;
 import java.net.URI;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import javax.swing.ImageIcon;
 /**
  *
@@ -21,6 +23,10 @@ public class TelaBiologia extends javax.swing.JFrame {
         initComponents();
         ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
         setIconImage(icon.getImage());
+        
+        carregarProgresso(1, jCheckBox5); 
+        carregarProgresso(2, jCheckBox6);
+        carregarProgresso(3, jCheckBox7);
     }
 
     /**
@@ -320,14 +326,17 @@ public class TelaBiologia extends javax.swing.JFrame {
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         // TODO add your handling code here:
+        salvarProgresso(1, jCheckBox5.isSelected());
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         // TODO add your handling code here:
+        salvarProgresso(2, jCheckBox6.isSelected());
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
         // TODO add your handling code here:
+        salvarProgresso(3, jCheckBox7.isSelected());
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -370,6 +379,44 @@ public class TelaBiologia extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void salvarProgresso(int idAula, boolean visto) {
+    String sql = "INSERT INTO progresso_aulas (email, id_aula, visto) " +
+                 "VALUES (?, ?, ?) " +
+                 "ON DUPLICATE KEY UPDATE visto = ?";
+                 
+     try {
+        PreparedStatement stmt = db.mycon().prepareStatement(sql);
+        stmt.setString(1, Sessao.emailUsuario);
+        stmt.setInt(2, idAula);
+        stmt.setBoolean(3, visto);
+        stmt.setBoolean(4, visto);
+        stmt.executeUpdate();
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+     
+}
+
+    
+    public void carregarProgresso(int idAula, javax.swing.JCheckBox checkBox) {
+    String sql = "SELECT visto FROM progresso_aulas WHERE email = ? AND id_aula = ?";
+    
+    try (var conn = db.mycon();
+         var stmt = conn.prepareStatement(sql)) {
+
+        stmt.setString(1, Sessao.emailUsuario);
+        stmt.setInt(2, idAula);
+
+        var rs = stmt.executeQuery();
+        if (rs.next()) {
+            checkBox.setSelected(rs.getBoolean("visto"));
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDisciplinasPrincipal1;

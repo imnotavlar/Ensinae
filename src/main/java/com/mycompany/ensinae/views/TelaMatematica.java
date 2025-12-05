@@ -6,7 +6,12 @@ package com.mycompany.ensinae.views;
 
 import java.awt.Desktop;
 import java.net.URI;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.ImageIcon;
+import javax.swing.JCheckBox;
 
 /**
  *
@@ -19,9 +24,31 @@ public class TelaMatematica extends javax.swing.JFrame {
      */
     public TelaMatematica() {
         initComponents();
+        
+        carregarProgresso(1, jCheckBox7);
+        carregarProgresso(2, jCheckBox5);
+        carregarProgresso(3, jCheckBox6);
+        
         ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
         setIconImage(icon.getImage());
     }
+    public void carregarProgresso(int idAula, JCheckBox checkbox) {
+    String sql = "SELECT visto FROM progresso_aulas WHERE email = ? AND id_aula = ?";
+
+    try {
+        PreparedStatement stmt = db.mycon().prepareStatement(sql);
+        stmt.setString(1, Sessao.emailUsuario);
+        stmt.setInt(2, idAula);
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            checkbox.setSelected(rs.getInt("visto") == 1);
+        }
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -323,14 +350,18 @@ public class TelaMatematica extends javax.swing.JFrame {
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         // TODO add your handling code here:
+        salvarProgresso(2, jCheckBox5.isSelected());
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         // TODO add your handling code here:
+        salvarProgresso(3, jCheckBox6.isSelected());
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
         // TODO add your handling code here:
+         salvarProgresso(1, jCheckBox7.isSelected());
+
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -373,6 +404,69 @@ public class TelaMatematica extends javax.swing.JFrame {
             }
         });
     }
+    public boolean carregarStatus(int userId, String videoId) {
+    String sql = "SELECT visto FROM progresso_aulas WHERE user_id = ? AND video_id = ?";
+    
+    try (var conn = db.mycon();
+         var stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, userId);
+        stmt.setString(2, videoId);
+
+        var rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            return rs.getInt("visto") == 1;
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    return false;
+}
+
+public void salvarStatus(int userId, String videoId, boolean visto) {
+    String sql = """
+        INSERT INTO progresso_aulas (user_id, video_id, visto)
+        VALUES (?, ?, ?)
+        ON DUPLICATE KEY UPDATE visto = VALUES(visto)
+    """;
+
+    try (var conn = db.mycon();
+         var stmt = conn.prepareStatement(sql)) {
+
+        stmt.setInt(1, userId);
+        stmt.setString(2, videoId);
+        stmt.setInt(3, visto ? 1 : 0);
+
+        stmt.executeUpdate();
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+public void salvarProgresso(int idAula, boolean visto) {
+    String sql = "INSERT INTO progresso_aulas (email, id_aula, visto) " +
+                 "VALUES (?, ?, ?) " +
+                 "ON DUPLICATE KEY UPDATE visto = ?";
+                 
+     try {
+        PreparedStatement stmt = db.mycon().prepareStatement(sql);
+        stmt.setString(1, Sessao.emailUsuario);
+        stmt.setInt(2, idAula);
+        stmt.setBoolean(3, visto);
+        stmt.setBoolean(4, visto);
+        stmt.executeUpdate();
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+
+
+
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDisciplinasPrincipal;

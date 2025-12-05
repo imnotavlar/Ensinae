@@ -39,7 +39,6 @@ public class Vestibulares extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel10 = new javax.swing.JLabel();
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel8 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
@@ -49,67 +48,40 @@ public class Vestibulares extends javax.swing.JFrame {
         btnExtraVest = new javax.swing.JButton();
         btnDisciplinasVest = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        Fatec = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        Enem = new javax.swing.JPanel();
+        btnEnem = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        Fatec = new javax.swing.JPanel();
+        btnFatec = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        Unitau = new javax.swing.JPanel();
+        btnUnitau = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        Unisal = new javax.swing.JPanel();
+        btnUnisal = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
         unesp = new javax.swing.JPanel();
         unesppp = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        btnUnesp = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        usp = new javax.swing.JPanel();
+        btnUsp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        Enem = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         Fuvest = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
+        btnFuvest = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         UFSC = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
+        btnUUFSC = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        UFJF = new javax.swing.JPanel();
+        btnUFJF = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         UERJ = new javax.swing.JPanel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
+        btnUERJ = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
-
-        jLabel10.setText("jLabel10");
 
         jInternalFrame1.setVisible(true);
 
@@ -210,122 +182,116 @@ public class Vestibulares extends javax.swing.JFrame {
 
         jTabbedPane1.setBackground(new java.awt.Color(250, 249, 246));
         jTabbedPane1.setForeground(new java.awt.Color(0, 51, 255));
-        jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+
+        Enem.setBackground(new java.awt.Color(0, 51, 255));
+        Enem.setLayout(null);
+
+        btnEnem.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnEnem.setForeground(new java.awt.Color(0, 51, 255));
+        btnEnem.setText("ACESSAR O SITE");
+        btnEnem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnemActionPerformed(evt);
+            }
+        });
+        Enem.add(btnEnem);
+        btnEnem.setBounds(280, 220, 360, 32);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/enem.png"))); // NOI18N
+        jLabel5.setText("jLabel1");
+        Enem.add(jLabel5);
+        jLabel5.setBounds(0, -100, 700, 400);
+
+        jTabbedPane1.addTab("Enem", Enem);
 
         Fatec.setBackground(new java.awt.Color(0, 51, 255));
         Fatec.setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("DATAS IMPORTANTES");
-        Fatec.add(jLabel3);
-        jLabel3.setBounds(180, 10, 200, 30);
-
-        jLabel5.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("INSCRIÇÕES:");
-        Fatec.add(jLabel5);
-        jLabel5.setBounds(170, 130, 130, 20);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("PROVA:");
-        Fatec.add(jLabel7);
-        jLabel7.setBounds(170, 160, 198, 20);
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("RESULTADOS:");
-        Fatec.add(jLabel9);
-        jLabel9.setBounds(170, 190, 130, 20);
-
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 51, 255));
-        jButton2.setText("ACESSAR O SITE");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnFatec.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnFatec.setForeground(new java.awt.Color(0, 51, 255));
+        btnFatec.setText("ACESSAR O SITE");
+        btnFatec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnFatecActionPerformed(evt);
             }
         });
-        Fatec.add(jButton2);
-        jButton2.setBounds(140, 240, 293, 32);
+        Fatec.add(btnFatec);
+        btnFatec.setBounds(280, 220, 360, 32);
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fatec.add(jLabel19);
-        jLabel19.setBounds(480, 240, 340, 210);
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fatec.add(jLabel20);
-        jLabel20.setBounds(540, 190, 120, 170);
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fatec.add(jLabel21);
-        jLabel21.setBounds(-50, 230, 340, 210);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/fatec.png"))); // NOI18N
+        jLabel7.setText("jLabel1");
+        Fatec.add(jLabel7);
+        jLabel7.setBounds(0, -100, 730, 400);
 
         jTabbedPane1.addTab("Fatec", Fatec);
+
+        Unitau.setBackground(new java.awt.Color(0, 51, 255));
+        Unitau.setLayout(null);
+
+        btnUnitau.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUnitau.setForeground(new java.awt.Color(0, 51, 255));
+        btnUnitau.setText("ACESSAR O SITE");
+        btnUnitau.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnitauActionPerformed(evt);
+            }
+        });
+        Unitau.add(btnUnitau);
+        btnUnitau.setBounds(280, 220, 360, 32);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/unitau.png"))); // NOI18N
+        jLabel9.setText("jLabel1");
+        Unitau.add(jLabel9);
+        jLabel9.setBounds(0, -100, 730, 400);
+
+        jTabbedPane1.addTab("Unitau", Unitau);
+
+        Unisal.setBackground(new java.awt.Color(0, 51, 255));
+        Unisal.setLayout(null);
+
+        btnUnisal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUnisal.setForeground(new java.awt.Color(0, 51, 255));
+        btnUnisal.setText("ACESSAR O SITE");
+        btnUnisal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnisalActionPerformed(evt);
+            }
+        });
+        Unisal.add(btnUnisal);
+        btnUnisal.setBounds(280, 220, 360, 32);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/unisal.png"))); // NOI18N
+        jLabel11.setText("jLabel1");
+        Unisal.add(jLabel11);
+        jLabel11.setBounds(0, -100, 730, 400);
+
+        jTabbedPane1.addTab("Unisal", Unisal);
 
         unesppp.setBackground(new java.awt.Color(0, 51, 255));
         unesppp.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("DATAS IMPORTANTES");
-        unesppp.add(jLabel1);
-        jLabel1.setBounds(180, 10, 200, 30);
-
-        jLabel2.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("INSCRIÇÕES:");
-        unesppp.add(jLabel2);
-        jLabel2.setBounds(170, 130, 130, 20);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("PRIMEIRA FASE:");
-        unesppp.add(jLabel4);
-        jLabel4.setBounds(170, 160, 198, 20);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("SEGUNDA FASE:");
-        unesppp.add(jLabel6);
-        jLabel6.setBounds(170, 190, 130, 20);
-
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 51, 255));
-        jButton1.setText("ACESSAR O SITE");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnUnesp.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUnesp.setForeground(new java.awt.Color(0, 51, 255));
+        btnUnesp.setText("ACESSAR O SITE");
+        btnUnesp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnUnespActionPerformed(evt);
             }
         });
-        unesppp.add(jButton1);
-        jButton1.setBounds(140, 240, 293, 32);
+        unesppp.add(btnUnesp);
+        btnUnesp.setBounds(280, 220, 360, 32);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/6cad392f-727a-4be7-a414-c635fe6e75aa.png"))); // NOI18N
-        unesppp.add(jLabel8);
-        jLabel8.setBounds(150, 20, 320, 120);
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        unesppp.add(jLabel13);
-        jLabel13.setBounds(480, 240, 340, 210);
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        unesppp.add(jLabel14);
-        jLabel14.setBounds(540, 190, 120, 170);
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        unesppp.add(jLabel15);
-        jLabel15.setBounds(-50, 230, 340, 210);
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/unesp.png"))); // NOI18N
+        jLabel16.setText("jLabel1");
+        unesppp.add(jLabel16);
+        jLabel16.setBounds(0, -100, 730, 400);
 
         javax.swing.GroupLayout unespLayout = new javax.swing.GroupLayout(unesp);
         unesp.setLayout(unespLayout);
         unespLayout.setHorizontalGroup(
             unespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(unesppp, javax.swing.GroupLayout.DEFAULT_SIZE, 617, Short.MAX_VALUE)
+            .addComponent(unesppp, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
         unespLayout.setVerticalGroup(
             unespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -336,215 +302,108 @@ public class Vestibulares extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Unesp", unesp);
 
-        Enem.setBackground(new java.awt.Color(0, 51, 255));
-        Enem.setLayout(null);
+        usp.setBackground(new java.awt.Color(0, 51, 255));
+        usp.setLayout(null);
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("DATAS IMPORTANTES");
-        Enem.add(jLabel17);
-        jLabel17.setBounds(180, 10, 200, 30);
-
-        jLabel22.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel22.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("INSCRIÇÕES:");
-        Enem.add(jLabel22);
-        jLabel22.setBounds(170, 130, 130, 20);
-
-        jLabel23.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("PRIMEIRO DIA:");
-        Enem.add(jLabel23);
-        jLabel23.setBounds(170, 160, 198, 20);
-
-        jLabel24.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("SEGUNDO DIA:");
-        Enem.add(jLabel24);
-        jLabel24.setBounds(170, 190, 130, 20);
-
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 51, 255));
-        jButton3.setText("ACESSAR O SITE");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnUsp.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUsp.setForeground(new java.awt.Color(0, 51, 255));
+        btnUsp.setText("ACESSAR O SITE");
+        btnUsp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnUspActionPerformed(evt);
             }
         });
-        Enem.add(jButton3);
-        jButton3.setBounds(140, 240, 293, 32);
+        usp.add(btnUsp);
+        btnUsp.setBounds(280, 220, 360, 32);
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Enem.add(jLabel28);
-        jLabel28.setBounds(480, 240, 340, 210);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/usp.png"))); // NOI18N
+        jLabel6.setText("jLabel1");
+        usp.add(jLabel6);
+        jLabel6.setBounds(0, -100, 730, 400);
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Enem.add(jLabel29);
-        jLabel29.setBounds(540, 190, 120, 170);
-
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Enem.add(jLabel30);
-        jLabel30.setBounds(-50, 230, 340, 210);
-
-        jTabbedPane1.addTab("Enem", Enem);
+        jTabbedPane1.addTab("USP", usp);
 
         Fuvest.setBackground(new java.awt.Color(0, 51, 255));
         Fuvest.setLayout(null);
 
-        jLabel26.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setText("DATAS IMPORTANTES");
-        Fuvest.add(jLabel26);
-        jLabel26.setBounds(180, 10, 200, 30);
-
-        jLabel31.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel31.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setText("INSCRIÇÕES:");
-        Fuvest.add(jLabel31);
-        jLabel31.setBounds(170, 130, 130, 20);
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setText("PRIMEIRA FASE:");
-        Fuvest.add(jLabel32);
-        jLabel32.setBounds(170, 160, 198, 20);
-
-        jLabel33.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel33.setText("SEGUNDA FASE:");
-        Fuvest.add(jLabel33);
-        jLabel33.setBounds(170, 190, 130, 20);
-
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 51, 255));
-        jButton4.setText("ACESSAR O SITE");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnFuvest.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnFuvest.setForeground(new java.awt.Color(0, 51, 255));
+        btnFuvest.setText("ACESSAR O SITE");
+        btnFuvest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnFuvestActionPerformed(evt);
             }
         });
-        Fuvest.add(jButton4);
-        jButton4.setBounds(140, 240, 293, 32);
+        Fuvest.add(btnFuvest);
+        btnFuvest.setBounds(280, 220, 360, 32);
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fuvest.add(jLabel37);
-        jLabel37.setBounds(480, 240, 340, 210);
-
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fuvest.add(jLabel38);
-        jLabel38.setBounds(540, 190, 120, 170);
-
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        Fuvest.add(jLabel39);
-        jLabel39.setBounds(-50, 230, 340, 210);
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/fuvest.png"))); // NOI18N
+        jLabel8.setText("jLabel1");
+        Fuvest.add(jLabel8);
+        jLabel8.setBounds(0, -100, 730, 400);
 
         jTabbedPane1.addTab("Fuvest", Fuvest);
 
         UFSC.setBackground(new java.awt.Color(0, 51, 255));
         UFSC.setLayout(null);
 
-        jLabel35.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel35.setText("DATAS IMPORTANTES");
-        UFSC.add(jLabel35);
-        jLabel35.setBounds(180, 10, 200, 30);
-
-        jLabel40.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel40.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel40.setText("INSCRIÇÕES:");
-        UFSC.add(jLabel40);
-        jLabel40.setBounds(170, 130, 130, 20);
-
-        jLabel41.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel41.setText("PRIMEIRA FASE:");
-        UFSC.add(jLabel41);
-        jLabel41.setBounds(170, 160, 198, 20);
-
-        jLabel42.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel42.setText("SEGUNDA FASE:");
-        UFSC.add(jLabel42);
-        jLabel42.setBounds(170, 190, 130, 20);
-
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 51, 255));
-        jButton5.setText("ACESSAR O SITE");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnUUFSC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUUFSC.setForeground(new java.awt.Color(0, 51, 255));
+        btnUUFSC.setText("ACESSAR O SITE");
+        btnUUFSC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnUUFSCActionPerformed(evt);
             }
         });
-        UFSC.add(jButton5);
-        jButton5.setBounds(140, 240, 293, 32);
+        UFSC.add(btnUUFSC);
+        btnUUFSC.setBounds(280, 220, 360, 32);
 
-        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UFSC.add(jLabel46);
-        jLabel46.setBounds(480, 240, 340, 210);
-
-        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UFSC.add(jLabel47);
-        jLabel47.setBounds(540, 190, 120, 170);
-
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UFSC.add(jLabel48);
-        jLabel48.setBounds(-50, 230, 340, 210);
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/usfc.png"))); // NOI18N
+        jLabel13.setText("jLabel1");
+        UFSC.add(jLabel13);
+        jLabel13.setBounds(0, -100, 730, 400);
 
         jTabbedPane1.addTab("UFSC", UFSC);
+
+        UFJF.setBackground(new java.awt.Color(0, 51, 255));
+        UFJF.setLayout(null);
+
+        btnUFJF.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUFJF.setForeground(new java.awt.Color(0, 51, 255));
+        btnUFJF.setText("ACESSAR O SITE");
+        btnUFJF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUFJFActionPerformed(evt);
+            }
+        });
+        UFJF.add(btnUFJF);
+        btnUFJF.setBounds(280, 220, 360, 32);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ufjf.png"))); // NOI18N
+        jLabel14.setText("jLabel1");
+        UFJF.add(jLabel14);
+        jLabel14.setBounds(0, -100, 730, 400);
+
+        jTabbedPane1.addTab("UFJF", UFJF);
 
         UERJ.setBackground(new java.awt.Color(0, 51, 255));
         UERJ.setLayout(null);
 
-        jLabel44.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel44.setText("DATAS IMPORTANTES");
-        UERJ.add(jLabel44);
-        jLabel44.setBounds(180, 10, 200, 30);
-
-        jLabel49.setBackground(new java.awt.Color(0, 102, 153));
-        jLabel49.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel49.setText("INSCRIÇÕES:");
-        UERJ.add(jLabel49);
-        jLabel49.setBounds(170, 130, 130, 20);
-
-        jLabel50.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel50.setText("PRIMEIRA FASE:");
-        UERJ.add(jLabel50);
-        jLabel50.setBounds(170, 160, 198, 20);
-
-        jLabel51.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setText("SEGUNDA FASE:");
-        UERJ.add(jLabel51);
-        jLabel51.setBounds(170, 190, 130, 20);
-
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(0, 51, 255));
-        jButton6.setText("ACESSAR O SITE");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnUERJ.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUERJ.setForeground(new java.awt.Color(0, 51, 255));
+        btnUERJ.setText("ACESSAR O SITE");
+        btnUERJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnUERJActionPerformed(evt);
             }
         });
-        UERJ.add(jButton6);
-        jButton6.setBounds(140, 240, 293, 32);
+        UERJ.add(btnUERJ);
+        btnUERJ.setBounds(280, 220, 360, 32);
 
-        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UERJ.add(jLabel55);
-        jLabel55.setBounds(480, 240, 340, 210);
-
-        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UERJ.add(jLabel56);
-        jLabel56.setBounds(540, 190, 120, 170);
-
-        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        UERJ.add(jLabel57);
-        jLabel57.setBounds(-50, 230, 340, 210);
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/uerj.png"))); // NOI18N
+        jLabel15.setText("jLabel1");
+        UERJ.add(jLabel15);
+        jLabel15.setBounds(0, -100, 730, 400);
 
         jTabbedPane1.addTab("UERJ", UERJ);
 
@@ -591,25 +450,14 @@ public class Vestibulares extends javax.swing.JFrame {
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnExtraVestActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnEnemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnemActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+        try {
+            Desktop.getDesktop().browse(new URI("https://enem.inep.gov.br/participante/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnEnemActionPerformed
 
     private void btnInicioVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioVestActionPerformed
         // TODO add your handling code here:
@@ -617,20 +465,92 @@ public class Vestibulares extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnInicioVestActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
-            Desktop.getDesktop().browse(new URI("https://vestibular.unesp.br/"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void btnDisciplinasVestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisciplinasVestActionPerformed
         // TODO add your handling code here:
         new TelaDisciplinas().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnDisciplinasVestActionPerformed
+
+    private void btnFatecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFatecActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://vestibular.fatec.sp.gov.br/home/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnFatecActionPerformed
+
+    private void btnUnitauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnitauActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://unitau.br/vestibular/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUnitauActionPerformed
+
+    private void btnUnisalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnisalActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://vestibular.unisal.br/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUnisalActionPerformed
+
+    private void btnUnespActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnespActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://vestibular.unesp.br/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUnespActionPerformed
+
+    private void btnUspActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUspActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://www.fuvest.br/enem-usp/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUspActionPerformed
+
+    private void btnFuvestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFuvestActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://www.fuvest.br/vestibular-da-usp/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnFuvestActionPerformed
+
+    private void btnUUFSCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUUFSCActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://vestibularunificado2026.ufsc.br/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUUFSCActionPerformed
+
+    private void btnUFJFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUFJFActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://www2.ufjf.br/copese/vestibular-pism-2/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUFJFActionPerformed
+
+    private void btnUERJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUERJActionPerformed
+        // TODO add your handling code here:
+         try {
+            Desktop.getDesktop().browse(new URI("https://www.vestibular.uerj.br/"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUERJActionPerformed
 
     /**
      * @param args the command line arguments
@@ -662,60 +582,33 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JPanel Fatec;
     private javax.swing.JPanel Fuvest;
     private javax.swing.JPanel UERJ;
+    private javax.swing.JPanel UFJF;
     private javax.swing.JPanel UFSC;
+    private javax.swing.JPanel Unisal;
+    private javax.swing.JPanel Unitau;
     private javax.swing.JButton btnDisciplinasVest;
+    private javax.swing.JButton btnEnem;
     private javax.swing.JButton btnEntrarVest;
     private javax.swing.JButton btnExtraVest;
+    private javax.swing.JButton btnFatec;
+    private javax.swing.JButton btnFuvest;
     private javax.swing.JButton btnInicioVest;
     private javax.swing.JButton btnSobreVest;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnUERJ;
+    private javax.swing.JButton btnUFJF;
+    private javax.swing.JButton btnUUFSC;
+    private javax.swing.JButton btnUnesp;
+    private javax.swing.JButton btnUnisal;
+    private javax.swing.JButton btnUnitau;
+    private javax.swing.JButton btnUsp;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -727,5 +620,6 @@ public class Vestibulares extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel unesp;
     private javax.swing.JPanel unesppp;
+    private javax.swing.JPanel usp;
     // End of variables declaration//GEN-END:variables
 }
