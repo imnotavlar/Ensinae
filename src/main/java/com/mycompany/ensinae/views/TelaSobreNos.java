@@ -16,10 +16,16 @@ public class TelaSobreNos extends javax.swing.JFrame {
      * Creates new form TelaPrincipal
      */
     public TelaSobreNos() {
-        initComponents();
-        ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
-        setIconImage(icon.getImage());
-    }
+    initComponents();
+    ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
+    setIconImage(icon.getImage());
+    
+    pack();                // monta o layout
+    setSize(715, 440);     // força o tamanho correto
+    setResizable(false);   // opcional
+    setLocationRelativeTo(null); // centraliza
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,19 +37,6 @@ public class TelaSobreNos extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel13 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnSairSN = new javax.swing.JButton();
@@ -51,80 +44,12 @@ public class TelaSobreNos extends javax.swing.JFrame {
         btnVestibularesSN = new javax.swing.JButton();
         btnExtraSN = new javax.swing.JButton();
         btnDisciplinasSN = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setBackground(new java.awt.Color(0, 51, 255));
-        jPanel1.setLayout(null);
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/e-book.png"))); // NOI18N
-        jLabel2.setText("Valores");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(310, 210, 190, 16);
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("conteúdos que facilitem a compreensão e o desenvolvimento pessoal e acadêmico.");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 90, 510, 20);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Acessibilidade, inovação, comprometimento, colaboração e respeito.");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(150, 230, 420, 20);
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/alvo.png"))); // NOI18N
-        jLabel5.setText("Missão");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(310, 50, 110, 16);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Tornar o aprendizado acessível, dinâmico e motivador para todos os estudantes, oferecendo ");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(80, 70, 570, 20);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Desenvolver uma plataforma que sirva como apoio ao estudo e ao compartilhamento");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(90, 150, 610, 20);
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/olho.png"))); // NOI18N
-        jLabel8.setText("Visão");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(310, 130, 120, 16);
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("de conhecimento e que auxilie os estudantes que desejam prestar os vestibulares");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 170, 500, 20);
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(-70, -10, 140, 160);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(670, 70, 30, 300);
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel12);
-        jLabel12.setBounds(-90, -10, 260, 300);
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/circulo.png"))); // NOI18N
-        jPanel1.add(jLabel14);
-        jLabel14.setBounds(630, 140, 260, 300);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -179,7 +104,7 @@ public class TelaSobreNos extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
                 .addComponent(btnInicioSN)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnDisciplinasSN)
@@ -208,12 +133,19 @@ public class TelaSobreNos extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
+        jPanel1.setBackground(new java.awt.Color(0, 51, 255));
+        jPanel1.setLayout(null);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/telasobrenos.png"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, -60, 760, 390);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -299,19 +231,8 @@ public class TelaSobreNos extends javax.swing.JFrame {
     private javax.swing.JButton btnSairSN;
     private javax.swing.JButton btnVestibularesSN;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

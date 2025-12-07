@@ -52,14 +52,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 51, 255));
-        jButton1.setText("Clique para conhecer nossos professores!");
+        jButton1.setText("Venha conhecer nossos professores!");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(40, 230, 410, 30);
+        jButton1.setBounds(70, 230, 340, 30);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/telaprincipal.png"))); // NOI18N
         jLabel5.setText("jLabel1");
