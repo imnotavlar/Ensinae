@@ -24,9 +24,9 @@ public class TelaPortugues extends javax.swing.JFrame {
         ImageIcon icon = new ImageIcon(getClass().getResource("/resources/icone.png"));
         setIconImage(icon.getImage());
         
-    carregarProgresso(1, jCheckBox4); 
-    carregarProgresso(2, jCheckBox5);
-    carregarProgresso(3, jCheckBox6);
+    carregarProgresso(4, jCheckBox4); 
+    carregarProgresso(5, jCheckBox5);
+    carregarProgresso(6, jCheckBox6);
     }
 
     /**
@@ -307,7 +307,7 @@ public class TelaPortugues extends javax.swing.JFrame {
 
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         // TODO add your handling code here:
-        salvarProgresso(1, jCheckBox4.isSelected());
+        salvarProgresso(4, jCheckBox4.isSelected());
     }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     private void btnEntrarPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarPrincipalActionPerformed
@@ -348,12 +348,12 @@ public class TelaPortugues extends javax.swing.JFrame {
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         // TODO add your handling code here:
-        salvarProgresso(2, jCheckBox5.isSelected());
+        salvarProgresso(5, jCheckBox5.isSelected());
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         // TODO add your handling code here:
-        salvarProgresso(3, jCheckBox6.isSelected());
+        salvarProgresso(6, jCheckBox6.isSelected());
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
